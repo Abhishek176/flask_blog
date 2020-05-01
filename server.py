@@ -24,8 +24,8 @@ def write_to_csv(data):
     email = data["email"]
     subject = data["subject"]
     message = data["message"]
-    with open('database.csv',newline='', mode='a' ) as database:
-        csv_writer = csv.writer(databsase, delimiter=',')
+    with open('database.csv',newline='', mode='a') as database:
+        csv_writer = csv.writer(database, delimiter=',')
         csv_writer.writerow([email, subject, message])
 
 
